@@ -61,34 +61,35 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <RadioButton
+        <CheckBox
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Programación" />
 
-        <RadioButton
+        <CheckBox
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Redes" />
 
-        <RadioButton
+        <CheckBox
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Seguridad" />
 
-        <RadioButton
+        <CheckBox
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Hardware" />
 
-        <RadioButton
+        <CheckBox
             android:id="@+id/radioButton5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Otra" />
+
     </RadioGroup>
 </LinearLayout>
