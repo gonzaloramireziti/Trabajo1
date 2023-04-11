@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(check.equals("Otra")){
+                if(check.getText().equals("Otra")){
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
 
                     // Crear un EditText para ingresar el texto
