@@ -12,7 +12,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
     EditText user, pass;
-    Button btnLogin;
+    Button btnLogin, btnRegister;
 
 
     @Override
@@ -24,6 +24,7 @@ public class LoginActivity extends AppCompatActivity {
         user = findViewById(R.id.usuario);
         pass = findViewById(R.id.pass);
         btnLogin = findViewById(R.id.sesion);
+        btnRegister = findViewById(R.id.register);
 
 
 
@@ -43,6 +44,14 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "Usuario o contraseña incorrecto/s", Toast.LENGTH_SHORT).show();
 
                 }
+
+            }
+        });
+
+        btnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigator.navegarTo(LoginActivity.this,RegisterActivity.class);
 
             }
         });
