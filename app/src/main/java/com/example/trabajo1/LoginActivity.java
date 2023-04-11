@@ -12,7 +12,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
     EditText user, pass;
-    Button btnLogin,btnRegister;
+    Button btnLogin, btnRegister;
 
 
     @Override
@@ -52,6 +52,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Navigator.navegarTo(LoginActivity.this,RegisterActivity.class);
+
             }
         });
     }
