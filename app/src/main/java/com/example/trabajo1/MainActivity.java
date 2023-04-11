@@ -57,9 +57,11 @@ public class MainActivity extends AppCompatActivity {
         check.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                if(check.getText().equals("Otra")){
+                if (check.getText().equals("Otra")) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+
+                    // Configurar el título del cuadro de diálogo
+                    builder.setTitle("Ingrese otra preferencia");
 
                     // Crear un EditText para ingresar el texto
                     final EditText input = new EditText(MainActivity.this);
@@ -70,9 +72,7 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             String inputText = input.getText().toString();
-
                             check.setText(inputText);
-
                         }
                     });
 
@@ -87,8 +87,8 @@ public class MainActivity extends AppCompatActivity {
                     // Mostrar el cuadro de diálogo de alerta
                     builder.show();
                 }
-
             }
         });
+
     }
 }
